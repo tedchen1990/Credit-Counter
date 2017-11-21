@@ -429,6 +429,7 @@
             this.pb_twoPound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_twoPound.TabIndex = 8;
             this.pb_twoPound.TabStop = false;
+            this.pb_twoPound.Click += new System.EventHandler(this.pb_twoPound_Click);
             // 
             // pb_onePound
             // 
@@ -439,6 +440,7 @@
             this.pb_onePound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_onePound.TabIndex = 7;
             this.pb_onePound.TabStop = false;
+            this.pb_onePound.Click += new System.EventHandler(this.pb_onePound_Click);
             // 
             // pb_fiftyP
             // 
@@ -449,6 +451,7 @@
             this.pb_fiftyP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_fiftyP.TabIndex = 6;
             this.pb_fiftyP.TabStop = false;
+            this.pb_fiftyP.Click += new System.EventHandler(this.pb_fiftyP_Click);
             // 
             // pb_twentyP
             // 
@@ -459,6 +462,7 @@
             this.pb_twentyP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_twentyP.TabIndex = 5;
             this.pb_twentyP.TabStop = false;
+            this.pb_twentyP.Click += new System.EventHandler(this.pb_twentyP_Click);
             // 
             // pb_tenP
             // 
@@ -469,6 +473,7 @@
             this.pb_tenP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_tenP.TabIndex = 4;
             this.pb_tenP.TabStop = false;
+            this.pb_tenP.Click += new System.EventHandler(this.pb_tenP_Click);
             // 
             // pb_fiveP
             // 
@@ -479,6 +484,7 @@
             this.pb_fiveP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_fiveP.TabIndex = 3;
             this.pb_fiveP.TabStop = false;
+            this.pb_fiveP.Click += new System.EventHandler(this.pb_fiveP_Click);
             // 
             // pb_twoP
             // 
@@ -489,6 +495,7 @@
             this.pb_twoP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_twoP.TabIndex = 2;
             this.pb_twoP.TabStop = false;
+            this.pb_twoP.Click += new System.EventHandler(this.pb_twoP_Click);
             // 
             // pb_oneP
             // 
@@ -499,6 +506,7 @@
             this.pb_oneP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_oneP.TabIndex = 1;
             this.pb_oneP.TabStop = false;
+            this.pb_oneP.Click += new System.EventHandler(this.pb_oneP_Click);
             // 
             // label4
             // 
@@ -597,6 +605,7 @@
             this.bt_Reset.TabIndex = 3;
             this.bt_Reset.Text = "Reset";
             this.bt_Reset.UseVisualStyleBackColor = false;
+            this.bt_Reset.Click += new System.EventHandler(this.bt_Reset_Click);
             // 
             // Credit_Counter
             // 
