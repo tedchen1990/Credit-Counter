@@ -124,11 +124,11 @@
             this.gb_CoinsEntered.Controls.Add(this.pictureBox11);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox6);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox7);
-            this.gb_CoinsEntered.Location = new System.Drawing.Point(537, 16);
+            this.gb_CoinsEntered.Location = new System.Drawing.Point(537, 8);
             this.gb_CoinsEntered.Margin = new System.Windows.Forms.Padding(4);
             this.gb_CoinsEntered.Name = "gb_CoinsEntered";
             this.gb_CoinsEntered.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_CoinsEntered.Size = new System.Drawing.Size(353, 854);
+            this.gb_CoinsEntered.Size = new System.Drawing.Size(353, 856);
             this.gb_CoinsEntered.TabIndex = 0;
             this.gb_CoinsEntered.TabStop = false;
             this.gb_CoinsEntered.Text = "Coins Entered";
@@ -390,11 +390,11 @@
             this.gb_Coins.Controls.Add(this.pb_twoP);
             this.gb_Coins.Controls.Add(this.pb_oneP);
             this.gb_Coins.Controls.Add(this.label4);
-            this.gb_Coins.Location = new System.Drawing.Point(17, 16);
+            this.gb_Coins.Location = new System.Drawing.Point(17, 8);
             this.gb_Coins.Margin = new System.Windows.Forms.Padding(4);
             this.gb_Coins.Name = "gb_Coins";
             this.gb_Coins.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_Coins.Size = new System.Drawing.Size(485, 673);
+            this.gb_Coins.Size = new System.Drawing.Size(485, 681);
             this.gb_Coins.TabIndex = 1;
             this.gb_Coins.TabStop = false;
             this.gb_Coins.Text = "Coins";
@@ -553,7 +553,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(86, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(312, 74);
+            this.label4.Size = new System.Drawing.Size(312, 82);
             this.label4.TabIndex = 0;
             this.label4.Text = "Click a coin to but a credits";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -638,7 +638,7 @@
             this.bt_Reset.Location = new System.Drawing.Point(17, 815);
             this.bt_Reset.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Reset.Name = "bt_Reset";
-            this.bt_Reset.Size = new System.Drawing.Size(485, 55);
+            this.bt_Reset.Size = new System.Drawing.Size(485, 49);
             this.bt_Reset.TabIndex = 3;
             this.bt_Reset.Text = "Reset";
             this.bt_Reset.UseVisualStyleBackColor = false;
