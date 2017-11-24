@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credit_Counter));
             this.gb_CoinsEntered = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lb_twentyP_num = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -46,16 +50,15 @@
             this.lb_oneP_num = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.gb_Coins = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txb_valuePound = new System.Windows.Forms.TextBox();
+            this.txb_TvaluePound = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txb_valuePence = new System.Windows.Forms.TextBox();
+            this.txb_TvaluePence = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pb_twoPound = new System.Windows.Forms.PictureBox();
             this.pb_onePound = new System.Windows.Forms.PictureBox();
@@ -73,13 +76,11 @@
             this.txb_CostCredits = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_Reset = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lb_twentyP_num = new System.Windows.Forms.Label();
             this.gb_CoinsEntered.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -94,12 +95,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_twoP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_oneP)).BeginInit();
             this.gb_Credits.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gb_CoinsEntered
             // 
             this.gb_CoinsEntered.BackColor = System.Drawing.Color.White;
+            this.gb_CoinsEntered.Controls.Add(this.pictureBox2);
             this.gb_CoinsEntered.Controls.Add(this.label8);
             this.gb_CoinsEntered.Controls.Add(this.lb_twentyP_num);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox1);
@@ -119,7 +120,6 @@
             this.gb_CoinsEntered.Controls.Add(this.lb_oneP_num);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox9);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox5);
-            this.gb_CoinsEntered.Controls.Add(this.pictureBox10);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox8);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox11);
             this.gb_CoinsEntered.Controls.Add(this.pictureBox6);
@@ -128,10 +128,50 @@
             this.gb_CoinsEntered.Margin = new System.Windows.Forms.Padding(4);
             this.gb_CoinsEntered.Name = "gb_CoinsEntered";
             this.gb_CoinsEntered.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_CoinsEntered.Size = new System.Drawing.Size(353, 848);
+            this.gb_CoinsEntered.Size = new System.Drawing.Size(353, 854);
             this.gb_CoinsEntered.TabIndex = 0;
             this.gb_CoinsEntered.TabStop = false;
             this.gb_CoinsEntered.Text = "Coins Entered";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(212, 639);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(99, 88);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(119, 445);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 38);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "x";
+            // 
+            // lb_twentyP_num
+            // 
+            this.lb_twentyP_num.AutoSize = true;
+            this.lb_twentyP_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_twentyP_num.Location = new System.Drawing.Point(41, 445);
+            this.lb_twentyP_num.Name = "lb_twentyP_num";
+            this.lb_twentyP_num.Size = new System.Drawing.Size(36, 38);
+            this.lb_twentyP_num.TabIndex = 26;
+            this.lb_twentyP_num.Text = "0";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(207, 422);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(106, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // label21
             // 
@@ -276,7 +316,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(197, 740);
+            this.pictureBox9.Location = new System.Drawing.Point(202, 740);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(121, 101);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -293,16 +333,6 @@
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(205, 643);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(106, 86);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 10;
-            this.pictureBox10.TabStop = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
@@ -316,7 +346,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(199, 528);
+            this.pictureBox11.Location = new System.Drawing.Point(201, 528);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(121, 101);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,9 +377,9 @@
             // 
             this.gb_Coins.BackColor = System.Drawing.Color.White;
             this.gb_Coins.Controls.Add(this.label7);
-            this.gb_Coins.Controls.Add(this.txb_valuePound);
+            this.gb_Coins.Controls.Add(this.txb_TvaluePound);
             this.gb_Coins.Controls.Add(this.label6);
-            this.gb_Coins.Controls.Add(this.txb_valuePence);
+            this.gb_Coins.Controls.Add(this.txb_TvaluePence);
             this.gb_Coins.Controls.Add(this.label5);
             this.gb_Coins.Controls.Add(this.pb_twoPound);
             this.gb_Coins.Controls.Add(this.pb_onePound);
@@ -380,18 +410,18 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "£";
             // 
-            // txb_valuePound
+            // txb_TvaluePound
             // 
-            this.txb_valuePound.BackColor = System.Drawing.Color.White;
-            this.txb_valuePound.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_valuePound.Location = new System.Drawing.Point(302, 612);
-            this.txb_valuePound.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_valuePound.Multiline = true;
-            this.txb_valuePound.Name = "txb_valuePound";
-            this.txb_valuePound.Size = new System.Drawing.Size(116, 33);
-            this.txb_valuePound.TabIndex = 10;
-            this.txb_valuePound.Text = "0.00";
-            this.txb_valuePound.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txb_TvaluePound.BackColor = System.Drawing.Color.White;
+            this.txb_TvaluePound.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_TvaluePound.Location = new System.Drawing.Point(302, 612);
+            this.txb_TvaluePound.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_TvaluePound.Multiline = true;
+            this.txb_TvaluePound.Name = "txb_TvaluePound";
+            this.txb_TvaluePound.Size = new System.Drawing.Size(116, 33);
+            this.txb_TvaluePound.TabIndex = 10;
+            this.txb_TvaluePound.Text = "0.00";
+            this.txb_TvaluePound.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
@@ -404,18 +434,18 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "p";
             // 
-            // txb_valuePence
+            // txb_TvaluePence
             // 
-            this.txb_valuePence.BackColor = System.Drawing.Color.White;
-            this.txb_valuePence.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_valuePence.Location = new System.Drawing.Point(146, 612);
-            this.txb_valuePence.Margin = new System.Windows.Forms.Padding(4);
-            this.txb_valuePence.Multiline = true;
-            this.txb_valuePence.Name = "txb_valuePence";
-            this.txb_valuePence.Size = new System.Drawing.Size(84, 33);
-            this.txb_valuePence.TabIndex = 5;
-            this.txb_valuePence.Text = "0";
-            this.txb_valuePence.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txb_TvaluePence.BackColor = System.Drawing.Color.White;
+            this.txb_TvaluePence.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_TvaluePence.Location = new System.Drawing.Point(146, 612);
+            this.txb_TvaluePence.Margin = new System.Windows.Forms.Padding(4);
+            this.txb_TvaluePence.Multiline = true;
+            this.txb_TvaluePence.Name = "txb_TvaluePence";
+            this.txb_TvaluePence.Size = new System.Drawing.Size(84, 33);
+            this.txb_TvaluePence.TabIndex = 5;
+            this.txb_TvaluePence.Text = "0";
+            this.txb_TvaluePence.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -614,36 +644,6 @@
             this.bt_Reset.UseVisualStyleBackColor = false;
             this.bt_Reset.Click += new System.EventHandler(this.bt_Reset_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(207, 422);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(119, 445);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 38);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "x";
-            // 
-            // lb_twentyP_num
-            // 
-            this.lb_twentyP_num.AutoSize = true;
-            this.lb_twentyP_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_twentyP_num.Location = new System.Drawing.Point(41, 445);
-            this.lb_twentyP_num.Name = "lb_twentyP_num";
-            this.lb_twentyP_num.Size = new System.Drawing.Size(36, 38);
-            this.lb_twentyP_num.TabIndex = 26;
-            this.lb_twentyP_num.Text = "0";
-            // 
             // Credit_Counter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -666,9 +666,10 @@
             this.Text = "Money Credit Counter V1.0";
             this.gb_CoinsEntered.ResumeLayout(false);
             this.gb_CoinsEntered.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -685,7 +686,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_oneP)).EndInit();
             this.gb_Credits.ResumeLayout(false);
             this.gb_Credits.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -715,12 +715,11 @@
         private System.Windows.Forms.PictureBox pb_fiftyP;
         private System.Windows.Forms.PictureBox pb_twentyP;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txb_valuePound;
+        private System.Windows.Forms.TextBox txb_TvaluePound;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txb_valuePence;
+        private System.Windows.Forms.TextBox txb_TvaluePence;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
@@ -739,6 +738,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lb_twentyP_num;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
