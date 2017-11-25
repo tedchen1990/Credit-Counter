@@ -128,7 +128,7 @@
             this.gb_CoinsEntered.Margin = new System.Windows.Forms.Padding(4);
             this.gb_CoinsEntered.Name = "gb_CoinsEntered";
             this.gb_CoinsEntered.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_CoinsEntered.Size = new System.Drawing.Size(353, 856);
+            this.gb_CoinsEntered.Size = new System.Drawing.Size(353, 865);
             this.gb_CoinsEntered.TabIndex = 0;
             this.gb_CoinsEntered.TabStop = false;
             this.gb_CoinsEntered.Text = "Coins Entered";
@@ -569,7 +569,7 @@
             this.gb_Credits.Margin = new System.Windows.Forms.Padding(4);
             this.gb_Credits.Name = "gb_Credits";
             this.gb_Credits.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_Credits.Size = new System.Drawing.Size(485, 109);
+            this.gb_Credits.Size = new System.Drawing.Size(485, 121);
             this.gb_Credits.TabIndex = 2;
             this.gb_Credits.TabStop = false;
             this.gb_Credits.Text = "Credits";
@@ -577,7 +577,7 @@
             // txb_Credits
             // 
             this.txb_Credits.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Credits.Location = new System.Drawing.Point(376, 70);
+            this.txb_Credits.Location = new System.Drawing.Point(376, 74);
             this.txb_Credits.Margin = new System.Windows.Forms.Padding(4);
             this.txb_Credits.Multiline = true;
             this.txb_Credits.Name = "txb_Credits";
@@ -590,7 +590,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 78);
+            this.label3.Location = new System.Drawing.Point(12, 82);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(322, 18);
@@ -611,11 +611,11 @@
             // txb_CostCredits
             // 
             this.txb_CostCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_CostCredits.Location = new System.Drawing.Point(355, 23);
+            this.txb_CostCredits.Location = new System.Drawing.Point(358, 23);
             this.txb_CostCredits.Margin = new System.Windows.Forms.Padding(4);
             this.txb_CostCredits.Multiline = true;
             this.txb_CostCredits.Name = "txb_CostCredits";
-            this.txb_CostCredits.Size = new System.Drawing.Size(66, 33);
+            this.txb_CostCredits.Size = new System.Drawing.Size(63, 33);
             this.txb_CostCredits.TabIndex = 1;
             this.txb_CostCredits.Text = "0";
             this.txb_CostCredits.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -635,7 +635,7 @@
             // 
             this.bt_Reset.BackColor = System.Drawing.Color.Red;
             this.bt_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Reset.Location = new System.Drawing.Point(17, 815);
+            this.bt_Reset.Location = new System.Drawing.Point(17, 824);
             this.bt_Reset.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Reset.Name = "bt_Reset";
             this.bt_Reset.Size = new System.Drawing.Size(485, 49);

@@ -20,7 +20,7 @@ namespace Credit_Counter
         #region Variables
 
         int Coin_value; /*Click the picture of coins to get the value*/
-        int Count; /*The ccumulative number for clicking the coins*/
+        int Count_Click; /*The ccumulative number for clicking the coins*/
         int Current_values; /*Current ccumulative values*/
         int Final_values; /*The result of total values*/
         double Cost_Credits; /*The value of Cost credits which have to setting before clicking coins*/
@@ -109,7 +109,8 @@ namespace Credit_Counter
 
                 /*Display data on the containers*/
                 txb_TvaluePence.Text = Final_values.ToString(); /*Show total pence*/
-                txb_TvaluePound.Text = String.Format("{0:n2}", Convert.ToDouble(Final_values) / 100);/*Show total pound and the proportion of valuePound and valuePence is 1:100 */
+                txb_TvaluePound.Text = String.Format("{0:n2}", Convert.ToDouble(Final_values) / 100); /*Show total pound and the proportion of valuePound and valuePence is 1:100 */
+                txb_Credits.Text = Math.Floor(Final_Credits).ToString(); /* Take integer for total credits without decimal place*/
                 switch (Coin_value)
                 {
 
