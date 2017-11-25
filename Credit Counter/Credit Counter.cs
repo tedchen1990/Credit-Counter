@@ -82,13 +82,13 @@ namespace Credit_Counter
         #region Resetting event
         private void bt_Reset_Click(object sender, EventArgs e) //Reset the text initial status
         {
-            /*Clear the textboxs of left*/
+            //*Clear the textboxs of left*//
             txb_TvaluePence.Text = "0";
             txb_TvaluePound.Text = "0.00";
             txb_CostCredits.Text = "0";
             txb_Credits.Text = "0";
 
-            /*Clear the lable of right which are the number for clicking the coins*/
+            //*Clear the lable of right which are the number for clicking the coins*//
             lb_oneP_num.Text = lb_twoP_num.Text =
             lb_fiveP_num.Text = lb_tenP_num.Text =
             lb_twentyP_num.Text = lb_fiftyP_num.Text =
@@ -103,17 +103,58 @@ namespace Credit_Counter
 
             if (Cost_Credits > 0) /*The Cost_value must be greater than 0 and before the method start*/
             {
+                //*Counting total pences and total credits*// 
                 int.TryParse(txb_TvaluePence.Text.Trim(), out Current_values); /*Get the values to Total_values from the textbox of txb_TvaluePence and avoid a failed convert*/
                 Final_values = Current_values + Coin_value; /*Get the total values with the clicking event that is Current_values add Coin_value*/
                 Final_Credits = Final_values / Cost_Credits; /*Credits should be got by total values divide cost of a credits and  PS:C# will convert int of Final_values into double automatically*/
 
-                /*Display data on the containers*/
+                //*Display data on the containers*//
                 txb_TvaluePence.Text = Final_values.ToString(); /*Show total pence*/
                 txb_TvaluePound.Text = String.Format("{0:n2}", Convert.ToDouble(Final_values) / 100); /*Show total pound and the proportion of valuePound and valuePence is 1:100 */
                 txb_Credits.Text = Math.Floor(Final_Credits).ToString(); /* Take integer for total credits without decimal place*/
-                switch (Coin_value)
+                switch (Coin_value) /*Coin_value as a mark for each lable of number of times*/
                 {
+                    case 1:
+                            Count_Click = Convert.ToInt32(lb_oneP_num.Text); /*Get the ccumulative number of clicking for 1p*/
+                            lb_oneP_num.Text = (++Count_Click/*Count_Click + 1*/).ToString(); /*Increase one for the number when 1p is clicked. And put it into lb_oneP_num.Text to show*/
+                        break;
 
+                    case 2: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_twoP_num.Text);
+                            lb_twoP_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    case 5: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_fiveP_num.Text);
+                            lb_fiveP_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    case 10: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_tenP_num.Text);
+                            lb_tenP_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    case 20: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_twentyP_num.Text);
+                            lb_twentyP_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    case 50: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_fiftyP_num.Text);
+                            lb_fiftyP_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    case 100: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_onePound_num.Text);
+                            lb_onePound_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    case 200: /*likewise*/
+                            Count_Click = Convert.ToInt32(lb_twoPound_num.Text);
+                            lb_twoPound_num.Text = (++Count_Click).ToString();
+                        break;
+
+                    default:break;
                 }
             }
             else /*Show the prompt if the Cost_value is less than 0*/
