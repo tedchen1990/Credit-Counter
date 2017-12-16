@@ -20,7 +20,6 @@ namespace Credit_Counter
         #region Variables
 
         int Coin_value; /*Click the picture of coins to get the value*/
-        int Count_Click; /*The ccumulative number for clicking the coins*/
         int Current_values; /*Current ccumulative values*/
         int Final_values; /*The result of total values*/
         double Cost_Credits; /*The value of Cost credits which have to setting before clicking coins*/
@@ -115,43 +114,35 @@ namespace Credit_Counter
                 switch (Coin_value) /*Coin_value as a mark for each lable of number of times*/
                 {
                     case 1:
-                            Count_Click = Convert.ToInt32(lb_oneP_num.Text); /*Get the ccumulative number of clicking for 1p*/
-                            lb_oneP_num.Text = (++Count_Click/*Count_Click + 1*/).ToString(); /*Increase one for the number when 1p is clicked. And put it into lb_oneP_num.Text to show*/
+                        lb_oneP_num.Text = (Convert.ToInt32(lb_oneP_num.Text)+1).ToString(); /*Increase one for the number when 1p is clicked. And put it into lb_oneP_num.Text to show*/                                                                   
                         break;
 
                     case 2: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_twoP_num.Text);
-                            lb_twoP_num.Text = (++Count_Click).ToString();
+                        lb_twoP_num.Text = (Convert.ToInt32(lb_twoP_num.Text) + 1).ToString();
                         break;
 
                     case 5: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_fiveP_num.Text);
-                            lb_fiveP_num.Text = (++Count_Click).ToString();
+                        lb_fiveP_num.Text = (Convert.ToInt32(lb_fiveP_num.Text) + 1).ToString();
                         break;
 
                     case 10: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_tenP_num.Text);
-                            lb_tenP_num.Text = (++Count_Click).ToString();
+                        lb_tenP_num.Text = (Convert.ToInt32(lb_tenP_num.Text) + 1).ToString();
                         break;
 
                     case 20: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_twentyP_num.Text);
-                            lb_twentyP_num.Text = (++Count_Click).ToString();
+                        lb_twentyP_num.Text = (Convert.ToInt32(lb_twentyP_num.Text) + 1).ToString();
                         break;
 
                     case 50: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_fiftyP_num.Text);
-                            lb_fiftyP_num.Text = (++Count_Click).ToString();
+                        lb_fiftyP_num.Text = (Convert.ToInt32(lb_fiftyP_num.Text) + 1).ToString();
                         break;
 
                     case 100: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_onePound_num.Text);
-                            lb_onePound_num.Text = (++Count_Click).ToString();
+                        lb_onePound_num.Text = (Convert.ToInt32(lb_onePound_num.Text) + 1).ToString();
                         break;
 
                     case 200: /*likewise*/
-                            Count_Click = Convert.ToInt32(lb_twoPound_num.Text);
-                            lb_twoPound_num.Text = (++Count_Click).ToString();
+                        lb_twoPound_num.Text = (Convert.ToInt32(lb_twoPound_num.Text) + 1).ToString();
                         break;
 
                     default:break;
